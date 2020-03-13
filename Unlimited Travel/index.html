@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Accueil | Unlimited Travel</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
+
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+	'use strict';
+      	jQuery('body').backstretch([
+	        "img/travel-1.jpg",
+	        "img/travel-2.jpg",
+	        "img/travel-3.jpg"
+	    ], {duration: 5000, fade: 500, centeredY: true });
+
+		$("#mapwrapper").gMap({ controls: false,
+         	scrollwheel: false,
+         	markers: [{
+              	latitude:40.7566,
+				longitude: -73.9863,
+          	icon: { image: "images/marker.png",
+              	iconsize: [44,44],
+          		iconanchor: [12,46],
+          		infowindowanchor: [12, 0] } }],
+          	icon: {
+              	image: "images/marker.png",
+             	iconsize: [26, 46],
+              	iconanchor: [12, 46],
+              	infowindowanchor: [12, 0] },
+         	latitude:40.7566,
+         	longitude: -73.9863,
+          	zoom: 14 });
+    });
+    </script>
+</head>
+
+<body>
+<!--Navbar-->
+<div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                 <a class="navbar-brand" href="index.html"><h1>Unlimited Travel</h1></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#services">Notre agence</a></li>
+                    <li><a href="#about-us">L'équipe</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><span class="search-trigger"><i class="fa fa-search"></i></span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<!--/navbar-->
+
+<!--slider-->
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                    <h2 class="boxed animation animated-item-1 fade-down">Dévouvrez comment voyager autrement</h2>
+                                    <p class="boxed animation animated-item-2 fade-up">Vivez une expérience inoubliable sans contraintes</p>
+                                    <br>
+                                    <a class="btn btn-md animation bounce-in" href="#contact">Nous contacter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--/slider-->
+
+<!--Notre agence-->
+    <div id="content-wrapper">
+        <section id="services" class="white">
+            <div class="container">
+            <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Notre Agence</h2>
+                            <hr>
+                            <p>Une équipe passionnée au service du bonheur des voyageurs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-plane fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Voyagez autrement</h3>
+                                <p>Parce qu'on sait que cela peut être compliqué et fastidieux d'organiser un voyage, Unlimited Travel vous propose des packages tout inclus pour que votre seule préoccupation soit de vous détendre ! ;)</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-money  fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Economisez de l'argent</h3>
+                                <p>Finis le temps où il fallait économiser des mois pour partir en voyage ! Grâce à Unlimited Travel, vous voyagez pour moindre coûts dans des lieux de rêve !</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-thumbs-o-up fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Satisfaction garantie</h3>
+                                <p>Notre équipe fait tout son possible pour trouver les voyages qui correspondent aux attentes des voyageurs. Des entretiens personnalisés avec un membre de l'équipe permettra de vous trouver le voyage de vos rêves.</p>
+                            </div>
+                        </div>
+	            <div class="gap"></div>
+        	</div>
+        </section>
+<!--/Notre agence-->
+
+<!--Témoignages-->
+		<section id="testimonial-carousel" class="divider-section">
+            <div class="gap"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Ce qu'ils disent de nous</h2>
+                            <hr>
+                            <p>Témoignages de clients satisfaits par Unlimited Travel</p>
+                            <div class="gap"></div>
+                        </div>
+                        <div class='col-md-offset-2 col-md-8 fade-up'>
+                            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                <!-- Bottom Carousel Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#quote-carousel" data-slide-to="1"></li>
+                                </ol>
+                                <!-- Carousel Slides / Quotes -->
+                                <div class="carousel-inner">
+                                  <!-- Quote 1 -->
+                                    <div class="item active">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-3 text-center">
+                                                    <img class="img-responsive" src="img/client-1.jpg" style="width: 100px;height:100px;">
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <p>J'ai vécu une expérience inoubliable grâce à Unlimited Travel. Je recommande fortement de passer par cette agence !</p>
+                                                    <small>Julie P.</small>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                    <!-- Quote 2 -->
+                                    <div class="item">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-3 text-center">
+                                                    <img class="img-responsive" src="img/client-2.jpg" style="width: 100px;height:100px;">
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <p>Je n'ai qu'une seule chose à dire, INCROYABLE ! Un service de qualité, à la hauteur de mes attentes !</p>
+                                                    <small>Paul N.</small>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gap"></div>
+                </div>
+            </section>
+<!--/Témoignages-->
+
+<!--L'équipe-->
+        <section id="about-us" class="white">
+        	<div class="container">
+
+	            <div class="gap"></div>
+	            <div class="center gap fade-down section-heading">
+	                <h2 class="main-title">Rencontrez l'équipe</h2>
+	                <hr>
+	                <p>Une team de 4 personnes passionnées par leur travail pour votre offrir la meilleure expérience possible.</p>
+	            </div>
+	            <div class="gap"></div>
+
+	            <div id="meet-the-team" class="row">
+	                <div class="col-md-3 col-xs-6">
+	                    <div class="center team-member">
+                            <div class="team-image">
+                                <img class="img-responsive img-thumbnail bounce-in" src="img/team-1.jpg" alt="">
+                            </div>
+	                        <div class="team-content fade-up">
+	                            <h5>Daniel Jones<small class="role muted">Agent de voyages</small></h5>
+	                            <p>Passionné depuis toujours des voyages dans le monde entier.</p>
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="col-md-3 col-xs-6">
+	                    <div class="center team-member">
+                            <div class="team-image">
+                                <img class="img-responsive img-thumbnail bounce-in" src="img/team-2.jpg" alt="">
+                            </div>
+	                        <div class="team-content fade-up">
+	                            <h5>Katy Ferrera<small class="role muted">Directice Communication</small></h5>
+	                            <p>Toujours partante pour lancer de nouveaux projets ! </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3 col-xs-6">
+	                    <div class="center team-member">
+                            <div class="team-image">
+                                <img class="img-responsive img-thumbnail bounce-in" src="img/team-3.jpg" alt="">
+                            </div>
+	                        <div class="team-content fade-up">
+	                            <h5>Matthieu Gorman<small class="role muted">Chargé partenariats</small></h5>
+	                            <p>Il nous déniche des places dans les plus beaux lieux du monde !</p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3 col-xs-6">
+	                    <div class="center team-member">
+                            <div class="team-image">
+    	                        <img class="img-responsive img-thumbnail bounce-in" src="img/team-4.jpg" alt="">
+                            </div>
+	                        <div class="team-content fade-up">
+	                            <h5>Steve McDon<small class="role muted">Photographe</small></h5>
+	                            <p>Il nous fait déjà voyager rien qu'avec ses photos !</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="gap"></div>
+	            <div class="gap"></div>
+            </div>
+        </section>
+<!--/L'équipe-->
+
+<!--Chiffres clés-->
+        <section id="stats" class="divider-section">
+            <div class="gap"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-plane bounce-in"></span></span>
+                            <h1><span class="counter">876</span></h1>
+                            <h3>Voyages organisés</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-light bounce-in"></span></span>
+                            <h1><span class="counter">16875</span></h1>
+                            <h3>Nouvelles idées / jour</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-graph1 bounce-in"></span></span>
+                            <h1><span class="counter">20678</span></h1>
+                            <h3>Forte croissance</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-box2 bounce-in"></span></span>
+                            <h1><span class="counter">26</span></h1>
+                            <h3>Projets en cours</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+        </section>
+<!--/Chiffres clés-->
+
+<!--Blog-->
+            <section id="blog" class="white">
+                <div class="container">
+                    <div class="center gap fade-down section-heading">
+                   		<div class="gap"></div>
+                        <h2 class="main-title">Derniers articles du blog</h2>
+                        <hr>
+                        <p>Restez au courant des dernières nouvelles de l'agence Unlimited Travel !</p>
+                    </div>
+                    <div class="gap"></div>
+                    <div class="row">
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="img/blog-1.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Ils ont fait le tour du monde</h2>
+	                                <div class="author">
+	                                    <i class="fa fa-user"></i> Par <b>Charlotte</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">13 Mars 2020</time>
+	                                </div>
+	                                <div>
+	                                    Faire un tour du monde a simplement été la meilleure décision de notre vie! Depuis ce fameux jour de 2017 où nous avons décidé autour d'une bouteille de vin de partir voyager autour du monde, notre vie a été complètement bouleversée.
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="#" class="btn btn-outlined btn-primary">En savoir plus</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="img/blog-2.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Partir voyager en Van</h2>
+	                                <div class="author">
+	                                    <i class="fa fa-user"></i> Par <b>Paul</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">03 Janvier 2020</time>
+	                                </div>
+	                                <div>
+	                                    Envie de changer des voyages organisés dans les moindre détails ? Pour ceux pour qui voyage doit absolument rimer avec aventure, coins de nature sauvage et heureux imprévus. Pour tous ceux-là, le van aménagé est un excellent moyen de voir du pays !
+
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="#" class="btn btn-outlined btn-primary">En savoir plus</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="img/blog-3.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Partir en sac à dos</h2>
+	                                <div class="author">
+	                                    <i class="fa fa-user"></i> Par <b>Matthieu</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">25 Sept 2019</time>
+	                                </div>
+	                                <div>
+	                                    Si vous voyagez avec un sac de randonnée sur le dos, pour une courte escapade ou un tour du Monde, voici toutes les astuces pour adopter votre sac à dos de voyage, le régler, le checker et optimiser son remplissage.
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="#" class="btn btn-outlined btn-primary">En savoir plus</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+                    </div>
+                </div>
+       		</section>
+<!--/Blog-->
+
+<!--Google maps-->
+			<div id="mapwrapper">
+				<div id="map"></div>
+			</div>
+<!--/Google maps-->
+
+<!--Contact-->
+            <section id="contact" class="white">
+                <div class="container">
+                	<div class="gap"></div>
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="main-title">Nous contacter</h2>
+                    </div>
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-4 fade-up">
+                            <h3>Contact Information</h3>
+                            <p><span class="icon icon-home"></span>Paris, 15e<br/>
+                                <span class="icon icon-phone"></span>+36 65984 405<br/>
+                                <span class="icon icon-mobile"></span>+36 65984 405<br/>
+                                <span class="icon icon-envelop"></span> <a href="#">email@unlimitedtravel.com</a> <br/>
+                                <span class="icon icon-facebook"></span> <a href="#">Unlimited Travel Agency</a> <br/>
+                            </p>
+                        </div><!-- col -->
+
+                        <div class="col-md-8 fade-up">
+                            <h3>Laissez-nous un message</h3>
+                            <br>
+                            <br>
+                            <div id="message"></div>
+                            <form method="post" action="sendemail.php" id="contactform">
+                                <input type="text" name="name" id="name" placeholder="Nom" />
+                                <input type="text" name="email" id="email" placeholder="Email" />
+                                <textarea name="comments" id="comments" placeholder="Commentaires"></textarea>
+                                <input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Envoyer" />
+                            </form>
+                        </div><!-- col -->
+                    </div><!-- row -->
+                    <div class="gap"></div>
+                </div>
+            </section>
+        </div>
+<!--/Contact-->
+
+<!--Footer-->
+    <div id="footer-wrapper">
+        <section id="bottom" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 about-us-widget">
+                        <h4>Présence Globale</h4>
+                        <p>Avec des bureaux partout dans le monde, nous faisons tous pour vous proposer le plus de destinations de voyages possible !</p>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>L'Agence</h4>
+                        <div>
+                            <ul class="arrow">
+                                <li><a href="#">Notre agence</a></li>
+                                <li><a href="#">L'équipe</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Derniers Articles</h4>
+                        <div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="img/blog-1.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Ils ont fait le tour du monde</a></span>
+                                    <small class="muted">Posté le 13 Mars 2020</small>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="img/blog-2.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Partir voyager en van</a></span>
+                                    <small class="muted">Posté le 3 Janvier 2020</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Venez nous voir</h4>
+                        <address>
+                            <strong>Agence Unlimited Travel</strong><br>
+                            Paris, 10e<br>
+                            <abbr title="Phone"><i class="fa fa-phone"></i></abbr> 01 64 73 74 24
+                        </address>
+                    </div> <!--/.col-md-3-->
+                </div>
+            </div>
+        </section><!--/#bottom-->
+
+        <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        &copy; 2020 Unlimited Travel. Tous droits réservés.
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!--Footer-->
+
+
+    <script src="js/plugins.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>
